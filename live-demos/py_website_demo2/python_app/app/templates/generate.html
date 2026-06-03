@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the QR code generated from your input data.">
+    <title>QR Code Generated</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>QR Code Generated</h1>
+    </header>
+    <main>
+        <figure>
+            <img src="/static/qr_codes/{{ file_name }}" alt="Generated QR Code for the provided data">        </figure>
+        <p>Data: <strong>{{ data }}</strong></p>
+        <a href="/" class="back-button" aria-label="Go back to the home page">Back to Home</a>
+    </main>
+    <footer>
+        <p>&copy; 2023 QR Code Generator</p>
+    </footer>
+    
+</body>
+</html>
+

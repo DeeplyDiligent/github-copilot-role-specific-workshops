@@ -1,0 +1,8 @@
+name: python_app
+services:
+  - name: python_app_service
+    project: ./
+    language: python
+    host: appservice
+    runtime: python:3.11
+    startupCommand: pip install -r requirements.txt && python run.py
